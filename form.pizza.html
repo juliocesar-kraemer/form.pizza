@@ -11,6 +11,7 @@
     <h1>Formulário pedido de pizza</h1>
     <form method="get">
         <p><label>Nome do cliente: <input name="nome" required placeholder="Nome do cliente"></label></p>
+        <p><label>Endereço: <input name="endereço" required placeholder="Endereço"></label></p>
         <p><label>Telefone: <input name="telefone" type="tel" required placeholder="Telefone"></label></p>
         <p><label>E-mail: <input name="email" type="email" required placeholder="E-mail"></label></p>
 
@@ -26,8 +27,12 @@
             <p><label><input type="checkbox" name="extras" value="bacon" required>Bacon</label></p>
             <p><label><input type="checkbox" name="extras" value="onion" required>Cebola</label></p>
             <p><label><input type="checkbox" name="extras" value="cheese" required>Queijo</label></p>
-            <p><label><input type="checkbox" name="extras" value="mushroom" required></label></p>
+            <p><label><input type="checkbox" name="extras" value="mushroom" required></label>Cogumelos</p>
         </fieldset>
+
+        <p><label>Hora da entrega: <input type="time" min="11:00" max="23:30" step="900" required></label></p>
+        <p><label>Dia da entrega: <input type="date" name="data" required></label></p>
+        <p><label><input type="submit" name="submit"></label></p>
 
     </form>
 </body>
