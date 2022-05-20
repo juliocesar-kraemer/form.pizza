@@ -13,14 +13,23 @@
         <p><label>Nome do cliente: <input name="nome" required placeholder="Nome do cliente"></label></p>
         <p><label>Telefone: <input name="telefone" type="tel" required placeholder="Telefone"></label></p>
         <p><label>E-mail: <input name="email" type="email" required placeholder="E-mail"></label></p>
+
         <fieldset>
             <legend>Tamanho da pizza</legend>
             <p><label><input type="radio" name="tamanho" value="pequena">Pequena</label></p>
             <p><label><input type="radio" name="tamanho" value="media">Média</label></p>
             <p><label><input type="radio" name="tamanho" value="grande">Grande</label></p>
         </fieldset>
+
+        <fieldset>
+            <legend>Extras</legend>
+            <p><label><input type="checkbox" name="extras" value="bacon" required>Bacon</label></p>
+            <p><label><input type="checkbox" name="extras" value="onion" required>Cebola</label></p>
+            <p><label><input type="checkbox" name="extras" value="cheese" required>Queijo</label></p>
+            <p><label><input type="checkbox" name="extras" value="mushroom" required></label></p>
+        </fieldset>
+
     </form>
-    
 </body>
 
 </html>
